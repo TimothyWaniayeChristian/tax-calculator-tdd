@@ -13,4 +13,9 @@ describe("Tax Calculator Function", function () {
         expect(calculateTax(24000)).to.equal(2400);
     });
 
+    it("should return 8800 for earnings of 40,000", function () {
+        expect(calculateTax(40000)).to.equal(8800);
+    });
+
+
 });
