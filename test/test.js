@@ -8,4 +8,9 @@ describe("Tax Calculator Function", function () {
     it("should return 0 for earnings below 12000", function () {
         expect(calculateTax(11000)).to.equal(0);
     });
+
+    it("should return 2400 for earnings of 24000 (20% tax)", function () {
+        expect(calculateTax(24000)).to.equal(2400);
+    });
+
 });
