@@ -17,5 +17,15 @@ describe("Tax Calculator Function", function () {
         expect(calculateTax(40000)).to.equal(8800);
     });
 
+    it("should return 0 for exactly 12000", function () {
+        expect(calculateTax(12000)).to.equal(0);
+    });
+
+    it("should return 4800 for exactly 36000 earnings", function () {
+        expect(calculateTax(36000)).to.equal(4800);
+    });
+
+
+
 
 });
